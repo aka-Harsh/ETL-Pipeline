@@ -1,0 +1,21 @@
+id,customer_name,product,amount,region,date
+1,Alice Johnson,Laptop,1500.00,North,2026-01-15
+2,Bob Smith,Mouse,25.00,South,2026-01-16
+3,Carol White,Monitor,800.00,East,2026-01-16
+4,Dave Brown,Keyboard,120.00,West,2026-01-17
+5,Eve Davis,Laptop,1750.00,North,2026-01-17
+6,Frank Miller,Headphones,250.00,South,2026-01-18
+7,Grace Wilson,Webcam,90.00,East,2026-01-18
+8,Hank Moore,Tablet,650.00,West,2026-01-19
+9,Iris Taylor,Laptop,1200.00,North,2026-01-19
+10,Jack Anderson,Monitor,950.00,South,2026-01-20
+11,Karen Thomas,Keyboard,85.00,East,2026-01-20
+12,Liam Jackson,Laptop,2100.00,West,2026-01-21
+13,Mia Harris,Mouse,35.00,North,2026-01-21
+14,Noah Martin,Tablet,720.00,South,2026-01-22
+15,Olivia Garcia,Monitor,1100.00,East,2026-01-22
+16,Paul Martinez,Headphones,180.00,West,2026-01-23
+17,Quinn Robinson,Laptop,1650.00,North,2026-01-23
+18,Rachel Clark,Webcam,75.00,South,2026-01-24
+19,Sam Rodriguez,Keyboard,200.00,East,2026-01-24
+20,Tina Lewis,Laptop,1900.00,West,2026-01-25

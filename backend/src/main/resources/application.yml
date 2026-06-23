@@ -1,0 +1,77 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: flowforge-backend
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/flowforge}
+    username: ${SPRING_DATASOURCE_USERNAME:flowforge}
+    password: ${SPRING_DATASOURCE_PASSWORD:flowforge}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    open-in-view: false
+
+  rabbitmq:
+    host: ${SPRING_RABBITMQ_HOST:localhost}
+    port: ${SPRING_RABBITMQ_PORT:5672}
+    username: ${SPRING_RABBITMQ_USERNAME:flowforge}
+    password: ${SPRING_RABBITMQ_PASSWORD:flowforge}
+
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      retries: 3
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST:localhost}
+      port: ${SPRING_REDIS_PORT:6379}
+      timeout: 5000
+
+aws:
+  endpoint: ${AWS_ENDPOINT:http://localhost:4566}
+  region: ${AWS_REGION:eu-west-2}
+  access-key-id: ${AWS_ACCESS_KEY_ID:test}
+  secret-access-key: ${AWS_SECRET_ACCESS_KEY:test}
+  dynamodb:
+    endpoint: ${DYNAMODB_ENDPOINT:http://localhost:4566}
+    table-name: FlowForgeExecutions
+
+ai:
+  api:
+    url: ${AI_API_URL:http://localhost:11434/api/generate}
+    key: ${AI_API_KEY:}
+    model: ${AI_MODEL:phi3:mini}
+  cache:
+    ttl-seconds: 3600
+
+flink:
+  rest:
+    url: ${FLINK_REST_URL:http://flink-jobmanager:8081}
+  jars:
+    dir: ${FLINK_JARS_DIR:/app/flink-jars}
+  enabled: ${FLINK_ENABLED:true}
+
+logging:
+  level:
+    com.flowforge: INFO
+    org.springframework.amqp: WARN
+    org.springframework.kafka: WARN
