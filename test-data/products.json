@@ -1,0 +1,12 @@
+[
+  {"id": 1, "name": "Laptop Pro", "category": "Electronics", "price": 1499.99, "stock": 45, "rating": 4.5},
+  {"id": 2, "name": "Wireless Mouse", "category": "Accessories", "price": 29.99, "stock": 200, "rating": 4.2},
+  {"id": 3, "name": "4K Monitor", "category": "Electronics", "price": 849.99, "stock": 30, "rating": 4.7},
+  {"id": 4, "name": "Mechanical Keyboard", "category": "Accessories", "price": 149.99, "stock": 85, "rating": 4.6},
+  {"id": 5, "name": "Gaming Laptop", "category": "Electronics", "price": 1799.99, "stock": 20, "rating": 4.4},
+  {"id": 6, "name": "Noise-Cancelling Headphones", "category": "Audio", "price": 299.99, "stock": 60, "rating": 4.8},
+  {"id": 7, "name": "USB-C Hub", "category": "Accessories", "price": 59.99, "stock": 150, "rating": 4.3},
+  {"id": 8, "name": "Drawing Tablet", "category": "Electronics", "price": 699.99, "stock": 25, "rating": 4.5},
+  {"id": 9, "name": "Webcam HD", "category": "Accessories", "price": 89.99, "stock": 100, "rating": 4.1},
+  {"id": 10, "name": "External SSD 1TB", "category": "Storage", "price": 119.99, "stock": 75, "rating": 4.6}
+]
